@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/> <!-- this says we use utf 8 as the documents character set-->
+        <title>Game of Life</title>
+        <link rel="stylesheet" type="text/css" href="Styles.css">
+    </head>
+    <body>
+
+        <div id = "buttons">
+            <button class = "allButtons" type = "button" onclick = "start();">START</button> 
+
+            <button class = "allButtons" type = "button" onclick = "reset();">RESET</button> 
+            
+            <button class = "allButtons" type = "button" onclick = "stop();" value = "stop" >STOP</button>
+
+        </div>
+
+        <canvas id = "canvas" width = "800" height = "800"></canvas>
+
+        <div id="chanceOfLifeSlider">    
+            <p id ="chance of life meter" >Percentage chance for life to exist: </p>
+            <p id = "sliderPercentage">50%</p>
+            <input min = "1" max = "100" type = "range" value = "50" class ="slider" id = "chanceOfLifeRange">
+        </div>
+
+    </body>
+
+    <script src="Cell.js"></script> 
+    <script src="Board.js"></script> 
+    <script src="Drawing.js"></script> 
+    <script src="EventListeners.js"></script> 
+    <script src="Sliders.js"></script> 
+    <script src="App.js"></script> 
+
+</html>
